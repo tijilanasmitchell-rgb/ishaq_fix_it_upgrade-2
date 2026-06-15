@@ -364,6 +364,80 @@ h1 strong {
   line-height: 1.03;
 }
 
+.book-section {
+  padding: 54px clamp(20px, 3vw, 60px) 48px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.book-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.book-intro {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.book-grid ul,
+.book-card ul {
+  margin: 0;
+  padding-left: 1.3rem;
+  color: var(--ink);
+  line-height: 1.9;
+}
+
+.book-grid ul li,
+.book-card ul li {
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.book-card {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.book-label {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--yellow);
+}
+
+.book-panel {
+  display: grid;
+}
+
+.book-card a {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.book-card .btn {
+  width: 100%;
+}
+
+.book-card .btn + .btn {
+  margin-top: 12px;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
