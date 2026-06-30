@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ishaq FixIt | Mobile Mechanic Services</title>
   <meta name="description" content="Ishaq FixIt mobile mechanic services for brakes, batteries, diagnostics, starters, alternators, and tune-ups across PA, DE, MD, and NJ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,10 +18,11 @@
     </a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="services.html">Services</a>
+      <a href="#request">Book</a>
+      <a href="parts.html">Order Parts</a>
       <a href="#coverage">Coverage</a>
-      <a href="#request">Request Quote</a>
-      <a href="#other-services">Other Services</a>
       <a class="nav-call" href="tel:+13024498103">Call Now</a>
     </nav>
   </header>
@@ -56,20 +60,22 @@
         <h2>Tap a service to see details</h2>
       </div>
       <div class="service-grid">
-        <button class="service-card red" data-service="Brakes"><span>🛑</span><strong>Brakes</strong><small>pads · rotors · noise checks</small></button>
-        <button class="service-card blue" data-service="Batteries"><span>🔋</span><strong>Batteries</strong><small>testing · replacement · no-start</small></button>
-        <button class="service-card yellow" data-service="Diagnostics"><span>🧰</span><strong>Diagnostics</strong><small>warning lights · issue tracing</small></button>
-        <button class="service-card blue" data-service="Starters"><span>⚙️</span><strong>Starters</strong><small>clicking · ignition response</small></button>
-        <button class="service-card red" data-service="Alternators"><span>🔄</span><strong>Alternators</strong><small>charging · battery light</small></button>
-        <button class="service-card yellow" data-service="Tune-ups"><span>✨</span><strong>Tune-Ups</strong><small>routine service support</small></button>
+        <button class="service-card red" data-service="Brakes"><img class="svc-icon" src="assets/icon-brakes.png" alt="" /><strong>Brakes</strong><small>pads · rotors · noise checks</small></button>
+        <button class="service-card blue" data-service="Batteries"><img class="svc-icon" src="assets/icon-batteries.png" alt="" /><strong>Batteries</strong><small>testing · replacement · no-start</small></button>
+        <button class="service-card yellow" data-service="Diagnostics"><img class="svc-icon" src="assets/icon-diagnostics.png" alt="" /><strong>Diagnostics</strong><small>warning lights · issue tracing</small></button>
+        <button class="service-card blue" data-service="Starters"><img class="svc-icon" src="assets/icon-starters.png" alt="" /><strong>Starters</strong><small>clicking · ignition response</small></button>
+        <button class="service-card red" data-service="Alternators"><img class="svc-icon" src="assets/icon-alternators.png" alt="" /><strong>Alternators</strong><small>charging · battery light</small></button>
+        <button class="service-card yellow" data-service="Tune-ups"><img class="svc-icon" src="assets/icon-tuneups.png" alt="" /><strong>Tune-Ups</strong><small>routine service support</small></button>
       </div>
+      <div class="intro-actions"><a class="btn btn-blue" href="services.html">See all services &amp; details &rarr;</a></div>
     </section>
 
-    <section class="why section-pop">
-      <img src="assets/character.png" alt="Ishaq FixIt superhero mechanic" />
+    <section id="about" class="why section-pop">
+      <img class="ishaq-photo" src="assets/ishaq.jpg" alt="Ishaq, owner of Ishaq FixIt" />
       <div>
-        <p class="eyebrow">Why choose Ishaq FixIt</p>
-        <h2>Mobile service with comic-book speed.</h2>
+        <p class="eyebrow">Meet your mechanic</p>
+        <h2>The hands behind the cape.</h2>
+        <p class="about-bio">Ishaq is the mobile mechanic behind Ishaq FixIt — bringing dealer-quality repairs straight to your driveway across PA, DE, MD &amp; NJ. Straight talk, fair work, and no tow truck required.</p>
         <div class="benefit-grid">
           <span>✓ We come to you</span>
           <span>✓ PA · DE · MD · NJ</span>
@@ -101,14 +107,45 @@
       </div>
     </section>
 
+    <section id="hours" class="section hours-section">
+      <div class="section-heading">
+        <p class="eyebrow">When we work</p>
+        <h2>Hours &amp; Location</h2>
+        <p>Weekends are the busiest — call to lock in your spot.</p>
+      </div>
+      <div class="hours-grid">
+        <div class="hours-card">
+          <span class="hours-icon">📅</span>
+          <strong>Mon – Fri</strong>
+          <p class="hours-time">7:00 AM – 1:00 PM</p>
+          <small>Mobile service to your location.</small>
+        </div>
+        <div class="hours-card highlight">
+          <span class="hours-icon">☀️</span>
+          <strong>Sat – Sun</strong>
+          <p class="hours-time">Available all day</p>
+          <small>Weather permitting. Busiest days — call ahead to confirm availability.</small>
+        </div>
+        <div class="hours-card">
+          <span class="hours-icon">🔧</span>
+          <strong>Garage (by appointment)</strong>
+          <p class="hours-time">Same hours</p>
+          <small>For non-sunny days, bring it to the garage — by appointment only.</small>
+        </div>
+      </div>
+    </section>
+
     <section id="request" class="section request-section">
       <div class="request-card">
         <div>
-          <p class="eyebrow">Interactive request</p>
-          <h2>Build your text message before you call</h2>
-          <p>Fill in the basics, then create a ready-to-send text message.</p>
+          <p class="eyebrow">Book / request service</p>
+          <h2>Book a time or request service</h2>
+          <p>Fill in the basics, create your text, and send it straight to Ishaq.</p>
         </div>
         <form id="requestForm">
+          <label>Your name
+            <input id="name" placeholder="First name" />
+          </label>
           <label>Vehicle issue
             <select id="issue">
               <option>Brakes</option><option>Battery</option><option>Diagnostics</option><option>Starter</option><option>Alternator</option><option>Tune-up</option><option>Other</option>
@@ -116,6 +153,12 @@
           </label>
           <label>State
             <select id="state"><option>DE</option><option>PA</option><option>MD</option><option>NJ</option></select>
+          </label>
+          <label>Preferred day
+            <input id="day" type="date" />
+          </label>
+          <label>Preferred time
+            <select id="time"><option>Morning (7am–1pm)</option><option>Afternoon</option><option>Evening</option><option>Weekend — all day</option><option>As soon as possible</option></select>
           </label>
           <label>Vehicle details
             <input id="vehicle" placeholder="Year, make, model" />
@@ -127,38 +170,6 @@
         </form>
         <div class="message-preview" id="messagePreview">Your message preview will appear here.</div>
         <a class="btn btn-yellow disabled" id="smsLink" href="#" aria-disabled="true">Text Ishaq FixIt</a>
-      </div>
-    </section>
-
-    <section class="section book-section section-pop">
-      <div class="section-heading">
-        <p class="eyebrow">Book service</p>
-        <h2>Ready for fast mobile repair?</h2>
-        <p>Call or message now to reserve a service window and confirm travel fee details.</p>
-      </div>
-      <div class="book-grid">
-        <div>
-          <p class="book-intro">Ishaq FixIt brings quick roadside repairs to your location. Book service for brakes, batteries, diagnostics, starters, alternators, and tune-ups with clear next steps and same-day support when available.</p>
-          <ul>
-            <li><strong>Call to book now</strong> for instant service.</li>
-            <li><strong>Build your message</strong> and send it directly.</li>
-            <li><strong>Know the travel fee</strong> before arrival.</li>
-            <li><strong>Get same-day support</strong> when possible.</li>
-          </ul>
-        </div>
-        <div class="book-panel">
-          <div class="book-card">
-            <p class="book-label">What booking includes</p>
-            <ul>
-              <li>On-site inspection and diagnosis</li>
-              <li>Repair recommendation and estimate</li>
-              <li>Transparent travel fee details</li>
-              <li>Follow-up support after service</li>
-            </ul>
-            <a class="btn btn-red" href="tel:+13024498103">Call to book now</a>
-            <a class="btn btn-yellow" href="#request">Build your message</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -183,6 +194,7 @@
       <div class="other-grid">
         <a href="https://www.instagram.com/ishaq_fit24/" target="_blank" rel="noopener"><span>🔌</span><strong>Electronic Fixing</strong><small>Tap to inquire through Instagram.</small></a>
         <a href="https://www.instagram.com/ishaq_fit24/" target="_blank" rel="noopener"><span>📺</span><strong>TV Hanging Services</strong><small>Tap to inquire through Instagram.</small></a>
+        <a href="parts.html"><span>🛠️</span><strong>Order Parts</strong><small>Need a part? Get it at vendor pricing — sourced &amp; installed.</small></a>
       </div>
     </section>
 
