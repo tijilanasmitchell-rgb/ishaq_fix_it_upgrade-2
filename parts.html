@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Parts | Ishaq FixIt</title>
+  <meta name="description" content="Order car parts through Ishaq FixIt at vendor pricing. Tell us the part you need, get a quote, and have it sourced and installed across PA, DE, MD, and NJ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Anton&family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ishaq FixIt home">
+      <span class="brand-mark">IF</span>
+      <span>Ishaq<span>FixIt</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#hours">Hours</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#request">Book</a>
+      <a href="parts.html">Order Parts</a>
+      <a href="index.html#coverage">Coverage</a>
+      <a class="nav-call" href="tel:+13024498103">Call Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero parts-hero section-pop">
+      <div class="hero-copy">
+        <p class="eyebrow">Parts you can order</p>
+        <h1><span>Need A</span><strong>Part?</strong></h1>
+        <p class="hero-text">Order the parts your vehicle needs straight from Ishaq FixIt. He gets it in and delivers it — installed or dropped off, your call.</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="#parts-form">Order a Part</a>
+          <a class="btn btn-red" href="tel:+13024498103">Call (302) 449-8103</a>
+        </div>
+        <p class="fine-print">Sourcing across PA · DE · MD · NJ. Travel fee may apply for install.</p>
+      </div>
+      <div class="hero-art" aria-label="Ishaq FixIt mechanic character">
+        <div class="burst"></div>
+        <img src="assets/character.png" alt="Ishaq FixIt superhero mechanic holding a wrench" />
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="section-heading">
+        <p class="eyebrow">How it works</p>
+        <h2>Three steps to your part</h2>
+      </div>
+      <div class="hours-grid">
+        <div class="hours-card">
+          <span class="hours-icon">1️⃣</span>
+          <strong>Place Order</strong>
+          <p class="hours-time">The Part</p>
+          <small>Send your vehicle and the part you need with the form below.</small>
+        </div>
+        <div class="hours-card highlight">
+          <span class="hours-icon">2️⃣</span>
+          <strong>Confirmed</strong>
+          <p class="hours-time">Price &amp; ETA</p>
+          <small>Ishaq confirms the price and availability and texts you right back.</small>
+        </div>
+        <div class="hours-card">
+          <span class="hours-icon">3️⃣</span>
+          <strong>Get It</strong>
+          <p class="hours-time">& Done</p>
+          <small>On your okay, Ishaq orders it in, delivers it — and installs it if you'd like.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="parts-form" class="section request-section">
+      <div class="request-card">
+        <div>
+          <p class="eyebrow">Place an order</p>
+          <h2>Order a part from Ishaq</h2>
+          <p>Fill in the details, create your order text, and send it straight to Ishaq.</p>
+        </div>
+        <form id="partsForm">
+          <label>Your name
+            <input id="pName" placeholder="First name" />
+          </label>
+          <label>Vehicle
+            <input id="pVehicle" placeholder="Year, make, model" />
+          </label>
+          <label>VIN (optional, best accuracy)
+            <input id="pVin" placeholder="17-character VIN" />
+          </label>
+          <label>Part needed
+            <input id="pPart" placeholder="e.g. front brake pads &amp; rotors, alternator" />
+          </label>
+          <label>Part preference
+            <select id="pCondition">
+              <option>New — OEM (factory)</option>
+              <option>New — aftermarket (lower cost)</option>
+              <option>Either — best price</option>
+              <option>Used / salvage if available</option>
+            </select>
+          </label>
+          <label>Install?
+            <select id="pInstall">
+              <option>Yes — order &amp; install it for me</option>
+              <option>Just the part — deliver it to me</option>
+              <option>Not sure — advise me</option>
+            </select>
+          </label>
+          <label>Notes
+            <textarea id="pNotes" placeholder="Anything else that helps — symptoms, deadline, budget"></textarea>
+          </label>
+          <button class="btn btn-red" type="submit">Place Order via Text</button>
+        </form>
+        <div class="message-preview" id="partsPreview">Your order summary will appear here.</div>
+        <a class="btn btn-yellow disabled" id="partsSmsLink" href="#" aria-disabled="true">Send Order to Ishaq</a>
+        <p class="fine-print parts-note">Ishaq confirms the price and availability before anything is ordered. Pay him directly — installation is optional and up to you.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Ishaq FixIt</strong>
+    <span>Mobile mechanic services · PA · DE · MD · NJ</span>
+    <a href="tel:+13024498103">(302) 449-8103</a>
+  </footer>
+
+  <a class="floating-call" href="tel:+13024498103" aria-label="Call Ishaq FixIt">☎ Call</a>
+  <script src="script.js"></script>
+</body>
+</html>
